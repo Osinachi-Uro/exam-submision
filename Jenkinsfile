@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     dir('kubernetes') {
-                        sh "aws eks update-kubeconfig --name AltschoolExam-eks-cluster"
+                        sh "aws eks update-kubeconfig --name AltchoolExam-eks-cluster"
                         sh "kubectl apply -f deployment.yaml"
                     }
                 }
