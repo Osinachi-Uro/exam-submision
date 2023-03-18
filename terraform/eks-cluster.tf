@@ -6,12 +6,12 @@ module "eks" {
 
     cluster_endpoint_public_access  = true
 
-    vpc_id = module.myapp-vpc.vpc_id
-    subnet_ids = module.myapp-vpc.private_subnets
+    vpc_id = module.AltschoolExam-vpc.vpc_id
+    subnet_ids = module.AltschoolExam-vpc.private_subnets
 
     tags = {
         environment = "development"
-        application = "myapp"
+        application = "AltschoolExam"
     }
 
     eks_managed_node_groups = {
