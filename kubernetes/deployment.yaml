@@ -317,6 +317,15 @@ spec:
     nodePort: 30001
   selector:
     name: front-end
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: front-end
+  type: LoadBalancer
 ---
 apiVersion: apps/v1
 kind: Deployment
