@@ -17,12 +17,12 @@ module "AltschoolExam-vpc" {
   }
 
   public_subnet_tags = {
-    "kubernetes.io/cluster/AltchoolExam-eks-cluster" = "shared"
+    "kubernetes.io/cluster/AltschoolExam-eks-cluster" = "shared"
     "kubernetes.io/role/elb"                  = 1
   }
 
   private_subnet_tags = {
-    "kubernetes.io/cluster/AltchoolExam-eks-cluster" = "shared"
+    "kubernetes.io/cluster/AltschoolExam-eks-cluster" = "shared"
     "kubernetes.io/role/internal-elb"         = 1
   }
 }
