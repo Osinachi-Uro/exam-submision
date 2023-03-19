@@ -5,7 +5,6 @@ variable "kube_config" {
   description = "path to kubeconfig file"
 }
 
-
 variable "namespace" {
   type    = string
   default = "monitoring"
