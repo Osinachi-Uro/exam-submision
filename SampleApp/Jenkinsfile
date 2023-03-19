@@ -18,7 +18,34 @@ pipeline {
             }
         }
 
+   
+        stage("Install Helm on EKS Cluster") {
+            steps {
+                script {
+                    dir('SampleApp/kube-prometheus') {
+                        sh "aws eks update-kubeconfig --name AltschoolExam-eks-app-cluster"
+                        sh "sudo apt-get install curl"
+                        sh "curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3"
+                        sh "chmod 700 get_helm.sh"
+                        sh "sudo apt-get install helm"
+                    }
+                }
+            }
+        }
 
+        
+        stage("Deploy Prometheus on EKS Cluster") {
+            steps {
+                script {
+                    dir('SampleApp/kube-prometheus') {
+                        sh "terraform init"
+                        sh "terraform apply -auto-approve"
+                    }
+                }
+            }
+        }
+
+        
         stage("Deploy to EKS") {
             steps {
                 script {
