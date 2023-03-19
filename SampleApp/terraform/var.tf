@@ -13,16 +13,15 @@ module "AltschoolExam-vpc" {
   enable_dns_hostnames = true
 
   tags = {
-    "kubernetes.io/cluster/AltschoolExam-app-eks-cluster" = "shared"
+    "kubernetes.io/cluster/AltschoolExam-eks-app-cluster" = "shared"
   }
 
   public_subnet_tags = {
-    "kubernetes.io/cluster/AltschoolExam-app-eks-cluster" = "shared"
+    "kubernetes.io/cluster/AltschoolExam-eks-app-cluster" = "shared"
     "kubernetes.io/role/elb"                  = 1
   }
 
   private_subnet_tags = {
-    "kubernetes.io/cluster/AltschoolExam-app-eks-cluster" = "shared"
     "kubernetes.io/role/internal-elb"         = 1
   }
 }
