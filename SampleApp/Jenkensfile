@@ -10,7 +10,7 @@ pipeline {
         stage("Create an EKS Cluster") {
             steps {
                 script {
-                    dir('terraform') {
+                    dir('SampleApp/terraform') {
                         sh "terraform init"
                         sh "terraform apply -auto-approve"
                     }
@@ -22,7 +22,7 @@ pipeline {
         stage("Deploy to EKS") {
             steps {
                 script {
-                    dir('kubernetes') {
+                    dir('SampleApp/kubernetes') {
                         sh "aws eks update-kubeconfig --name AltschoolExam-eks-app-cluster"
                         sh "kubectl apply -f mongo-secret.yml"
                         sh "kubectl apply -f mongo-deployment.yml"
