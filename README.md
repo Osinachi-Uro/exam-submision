@@ -13,6 +13,14 @@
 <img width="484" alt="Jenkins server 2" src="https://user-images.githubusercontent.com/83463641/227664309-7777cb92-1044-4a75-a49e-9e09888b5f21.PNG">
 
 
-### Testing 
+### Result from ``` terraform apply ```
 
-3. The login details for the Jenkins server was provided in the submission form. Feel free to login and test the Jenkinsfile script inside each folder.
+<img width="942" alt="terraform apply" src="https://user-images.githubusercontent.com/83463641/227744771-7a0dc32a-14c4-4b4b-9698-bfb0770d94f2.PNG">
+
+### Runnng EKS Cluster and Nodes
+
+<img width="466" alt="EKS Cluster" src="https://user-images.githubusercontent.com/83463641/227744952-cb81591f-d4a4-4a55-b68b-7cd312a75f90.PNG">
+
+
+<img width="525" alt="deployed nodes" src="https://user-images.githubusercontent.com/83463641/227744924-2adddcf5-7a43-45d9-8205-8ebccbe5754f.PNG">
+
