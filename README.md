@@ -2,6 +2,12 @@
 
 * The folder named Jenkins-Server contains terraform  files for the deplyemnt of an AWS t2micro instane that will host my Jenkins Server. This folder also contains a bash script called jenkins-server.sh to be executed as uer data when the instance is being deployed. The bash script will install Jenkins, Git, Terraform and Kubectl.
 
-* The folder named 
+* The folders named SampleApp and SockShop each contain Terraform-Kubernetes deployement files and Jenkinsfiles.
 
-Each folder contain scripts and Jenkinsfile for each part of the task.
+1. Jenkins server deployed and running with IP Address *34.207.77.107*
+
+<img width="506" alt="Jenkins server" src="https://user-images.githubusercontent.com/83463641/227664273-326991b5-55c6-4cf4-a086-0f62fd325464.PNG">
+
+2. Jenkins server opened on port 8080
+
+<img width="484" alt="Jenkins server 2" src="https://user-images.githubusercontent.com/83463641/227664309-7777cb92-1044-4a75-a49e-9e09888b5f21.PNG">
