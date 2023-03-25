@@ -11,3 +11,8 @@
 2. Jenkins server opened on port 8080
 
 <img width="484" alt="Jenkins server 2" src="https://user-images.githubusercontent.com/83463641/227664309-7777cb92-1044-4a75-a49e-9e09888b5f21.PNG">
+
+
+### Testing 
+
+3. The login details for the Jenkins server was provided in the submission form. Feel free to login and test the Jenkinsfile script inside each folder.
