@@ -1,8 +1,8 @@
 ### Exam Submission
 
-* The folder named Jenkins-Server contains terraform  files for the deplyemnt of an AWS t2micro instane that will host my Jenkins Server. This folder also contains a bash script called jenkins-server.sh to be executed as uer data when the instance is being deployed. The bash script will install Jenkins, Git, Terraform and Kubectl.
+* The folder named Jenkins-Server contains terraform  files for the deployment of an AWS t2micro instance that will host my Jenkins Server. This folder also contains a bash script called jenkins-server.sh to be executed as uer data when the instance is being deployed. The bash script will install Jenkins, Git, Terraform, and Kubectl.
 
-* The folders named SampleApp and SockShop each contain Terraform-Kubernetes deployement files and Jenkinsfiles.
+* The folders named SampleApp and SockShop each contain Terraform-Kubernetes deployment files and Jenkinsfiles.
 
 1. Jenkins server deployed and running with IP Address *34.207.77.107*
 
@@ -17,7 +17,7 @@
 
 <img width="942" alt="terraform apply" src="https://user-images.githubusercontent.com/83463641/227744771-7a0dc32a-14c4-4b4b-9698-bfb0770d94f2.PNG">
 
-### Runnng EKS Cluster and Nodes
+### Running EKS Cluster and Nodes
 
 <img width="466" alt="EKS Cluster" src="https://user-images.githubusercontent.com/83463641/227744952-cb81591f-d4a4-4a55-b68b-7cd312a75f90.PNG">
 
